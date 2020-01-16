@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('about','AboutController@viewAboutFile');
+
+Route::get('contact','ContactUsController@viewContactUsFile');
+
+Route::get('blog','BlogController@viewBlogFile');
+Route::post('blog','BlogController@viewBlogFile');
