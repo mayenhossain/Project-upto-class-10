@@ -28,3 +28,9 @@ Route::get('posts/edit/{id}','PostController@edit');
 Route::get('posts/update/{id}','PostController@update');
 Route::get('posts/delete/{id}','PostController@destroy');
 
+Route::get('products','ProductController@index');
+Route::get('products/create','ProductController@create');
+Route::get('products/store','ProductController@store');
+Route::get('products/edit/{id}','ProductController@edit');
+Route::get('products/update/{id}','ProductController@update');
+Route::get('products/delete/{id}','ProductController@destroy');
